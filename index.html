@@ -27,10 +27,13 @@
     <!-- Contenedor de listas -->
     <section id="lists-container">
       <!-- Para agregar una nueva lista -->
-      <div class="add-list-box collapsed-box">
+      <div id="add-list-box" class="collapsed-box">
         <p id="collapsed-text" class="show">Añadir lista...</p>
-        <input class="hidden" type="text" placeholder="Añadir lista...">
-        <button id="save-btn" class="hidden">Guardar</button>
+        <form>
+          <input class="hidden" type="text" placeholder="Añadir lista...">
+          <button id="save-btn" class="hidden" type="button">Guardar</button>
+          <button id="close-btn" class="hidden" type="button">X</button>
+        </form>
       </div>
     </section>
   </main>
