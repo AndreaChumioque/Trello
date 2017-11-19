@@ -93,6 +93,7 @@ main {
 /* Estilos contenedor de listas */
 #lists-container {
 	margin: 15px 0;
+	overflow: auto;
 }
 
 #add-list-box {
@@ -100,9 +101,10 @@ main {
 	padding: 10px;
 	border-radius: 3px;
 	transition: .15s;
+	float: left;
 }
 
-#add-list-box input {
+#add-list-input {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 10px;
@@ -112,7 +114,7 @@ main {
 	border: .5px solid #c5c5c7;
 }
 
-#add-list-box input:focus {
+#add-list-input:focus {
 	outline: none;
 }
 
@@ -141,15 +143,48 @@ main {
 	transition: .25s;
 }
 
+#save-btn:focus {
+	outline: none;
+}
+
 #save-btn:hover {
 	background-color: #248232;
 }
 
 #close-btn {
 	border: none;
-	background-color: #fff;
+	background-color: transparent;
 	color: #999999;
-	padding: 10px;
-	font-size: 1.5em;
+	padding: 2px;
+	font-size: 2em;
+	font-weight: 200;
+	vertical-align: bottom;
 	cursor: pointer;
 }
+
+#close-btn:focus {
+	outline: none;
+}
+
+#close-btn:hover {
+	color: #555555;
+}
+
+/* Estilos nueva lista */
+.new-list {
+	width: 270px;
+	height: 200px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: #e2e4e6;
+	float: left;
+	border-radius: 5px;
+}
+
+.new-list p {
+	padding: 10px;
+	font-size: .9em;
+	color: #333333;
+	font-weight: 700;
+}
+
