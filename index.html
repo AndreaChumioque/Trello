@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="assets/icons/icomoon/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Trello</title>
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <figure id="logo-trello"><img src="assets/images/trello-logo.svg" alt="Trello Logo"></figure>
+  </header>
+  <main>
+    <!-- Info del tablero -->
+    <nav class='board-info'>
+      <ul>
+          <li><a href="#">Tablero - Reto de código</a></li>
+          <li><a href="#"><span class="icon-star"></span></a></li>
+          <span class="separate">&vert;</span>
+          <li><a href="#"><span class="icon-lock"></span>&nbsp;Privado</a></li>
+        </ul>
+    </nav>
+    <!-- Contenedor de listas -->
+    <section id="lists-container">
+      <!-- Para agregar una nueva lista -->
+      <div class="add-list-box collapsed-box">
+        <p id="collapsed-text" class="show">Añadir lista...</p>
+        <input class="hidden" type="text" placeholder="Añadir lista...">
+        <button id="save-btn" class="hidden">Guardar</button>
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

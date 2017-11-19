@@ -1,0 +1,117 @@
+/* COLORES 
+Trello default		#0079bf
+Botones				#5aac44
+Listas				#e2e4e6
+Tarjetas			#ffffff*/
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: #0079bf;
+}
+
+.hidden {
+	display: none;
+}
+
+.show {
+	display: initial;
+}
+
+/* Estilos header */
+
+header {
+	height: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #0067a3;
+	overflow: hidden;
+}
+
+#logo-trello {
+	width: 80px;
+	margin: 0 auto;
+	position: absolute;
+	left: calc(50% - 40px);
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#logo-trello img {
+	width: 100%;
+}
+
+/* Estilos main */
+main {
+	margin-top: 40px;
+	padding: 15px 10px;
+}
+
+/* Estilos menu board info */
+.board-info ul {
+	list-style: none;
+	cursor: default;
+}
+
+.board-info li {
+	display: inline-block;
+	margin: 0 3px;
+	font-size: .9em;
+	font-weight: 200;
+}
+
+.board-info li:first-child {
+	font-size: 1.15em;
+	font-weight: 600;
+}
+
+.board-info a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 7.5px;
+	border-radius: 3px;
+}
+
+.board-info a:hover {
+	background-color: #0067a3;
+}
+
+.separate {
+	color: #4d95be;
+	font-weight: 300;
+	cursor: default;
+}
+
+/* Estilos contenedor de listas */
+#lists-container {
+	margin: 15px 0;
+}
+
+.add-list-box {
+	width: 270px;
+	padding: 10px;
+	border-radius: 3px;
+	transition: .15s;
+}
+.collapsed-box {
+	background-color: #0067a3;
+	color: #84b7d5;
+	cursor: pointer;
+}
+
+.collapsed-box:hover {
+	background-color: #004B77;
+}
+
+.expanded-box {
+	background-color: #e2e4e6;
+	/* height: 100px; */
+}
