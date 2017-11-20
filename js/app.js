@@ -67,8 +67,7 @@ function addList(event) {
     newListTitle.textContent = newListName.value;
     newListTitle.classList.add('list-title');
     newListBox.appendChild(newListTitle);
-    var clone = addTicketBox.cloneNode(true);
-    newListBox.appendChild(clone);
+    newListBox.appendChild(addTicketBox);
     document.getElementById('lists-container').insertBefore(newListBox, addListBox);
     addTicketBox.classList.replace('hidden', 'show');
     newListName.value = '';
@@ -76,7 +75,7 @@ function addList(event) {
   }
   newListName.focus();
   if (lists > 1) {
-    
+    var clone = addTicketBox.cloneNode(true);
     newListBox.previousElementSibling.appendChild(clone);
     clone.addEventListener('click', expandAddTicketBox);
   }
