@@ -185,6 +185,7 @@ main {
 	background-color: #e2e4e6;
 	float: left;
 	border-radius: 3px;
+	word-wrap: break-word;
 }
 
 .list-title {
