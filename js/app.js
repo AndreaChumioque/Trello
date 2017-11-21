@@ -21,6 +21,12 @@ function begin() {
       listForm.classList.toggle('hidden');
       listInput.focus();
     }
+    if (event.target.className === 'add-ticket') {
+      var ticketForm = event.target.nextElementSibling;
+      event.target.classList.toggle('hidden');
+      ticketForm.classList.toggle('hidden');
+      ticketForm.firstChild.focus();
+    }
   }
 
   // Función para colapsar al hacer click fuera
