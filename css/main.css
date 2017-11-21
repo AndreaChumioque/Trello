@@ -16,6 +16,53 @@ body {
 	background-color: #0079bf;
 }
 
+main {
+	height: calc(100vh - 40px);
+	margin-top: 40px;
+	padding: 15px 10px;
+}
+
+form {
+	width: 270px;
+	padding: 10px;
+	border-radius: 3px;
+	background-color: #e2e4e6;
+	overflow: hidden;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border-radius: 3px;
+	border: .5px solid #c5c5c7;
+}
+
+input:focus {
+	outline: none;
+}
+
+button[type=submit] {
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #5aac44;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	transition: .25s;
+	float: left;
+}
+
+button[type=submit]:focus {
+	outline: none;
+}
+
+button[type=submit]:hover {
+	background-color: #248232;
+}
+
 .hidden {
 	display: none;
 }
@@ -46,13 +93,6 @@ header {
 
 #logo-trello img {
 	width: 100%;
-}
-
-/* Estilos main */
-main {
-	height: calc(100vh - 40px);
-	margin-top: 40px;
-	padding: 15px 10px;
 }
 
 /* Estilos menu board info */
@@ -96,65 +136,24 @@ main {
 	overflow: auto;
 }
 
-#add-list-box {
+#add-list {
 	width: 270px;
 	padding: 10px;
 	border-radius: 3px;
 	transition: .15s;
 	float: left;
-}
-
-.add-input {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 10px;
-	background-color: #fff;
-	border-radius: 3px;
-	border: .5px solid #c5c5c7;
-}
-
-.add-input:focus {
-	outline: none;
-}
-
-#add-list-input {
-	background-color: #d7d8da;
-	box-shadow: inset 0 0 10px #c5c5c7;
-}
-
-.collapsed-list-box {
 	background-color: #0067a3;
 	color: #84b7d5;
 	cursor: pointer;
 }
 
-.collapsed-list-box:hover {
+#add-list:hover {
 	background-color: #004B77;
 }
 
-.expanded-box {
-	background-color: #e2e4e6;
-	overflow: hidden;
-}
-
-.green-btn {
-	border: none;
-	border-radius: 5px;
-	padding: 10px;
-	background-color: #5aac44;
-	color: #fff;
-	font-weight: 600;
-	cursor: pointer;
-	transition: .25s;
-	float: left;
-}
-
-.green-btn:focus {
-	outline: none;
-}
-
-.green-btn:hover {
-	background-color: #248232;
+#list-input {
+	background-color: #d7d8da;
+	box-shadow: inset 0 0 10px #c5c5c7;
 }
 
 .close-btn {
@@ -195,22 +194,23 @@ main {
 	font-weight: 700;
 }
 
-.add-ticket-box {
+.add-ticket {
 	padding: 10px;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
+	cursor: pointer;
 }
 
-.collapsed-ticket-box {
+/* .collapsed-ticket-box {
 	font-weight: 400;
 	color: #999999;
 	cursor: pointer;
 	padding: 10px;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
-}
+} */
 
-.collapsed-ticket-box:hover {
+.add-ticket:hover {
 	background-color: #c5c5c7;
 	color: #333333;
 	text-decoration: underline;
