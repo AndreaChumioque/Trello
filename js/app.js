@@ -47,6 +47,7 @@ window.onload = function() {
 
   // Función para agregar nueva lista (solo si se ingresa un nombre de lista) boton Guardar
   function addList(event) {
+    event.preventDefault();
     if (event.target.matches('button') && newListName.value !== '') {
       var newListBox = document.createElement('div');
       newListBox.classList.add('new-list');
@@ -95,6 +96,7 @@ window.onload = function() {
   // Función para añadir nueva tarjeta
   function addTicket(event) {
     debugger;
+    event.preventDefault();
     if (event.target.matches('.add-btn', '.green-btn', '.show')) {
       var box = event.target.parentElement.parentElement;
       if (box.lastChild.firstChild.value !== '') {
